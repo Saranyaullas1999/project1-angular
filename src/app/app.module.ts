@@ -9,6 +9,7 @@ import { IndexComponent } from './index/index.component';
 import { ContactComponent } from './contact/contact.component';
 import { RouterModule,Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { RoomComponent } from './room/room.component';
 
 
 
@@ -22,6 +23,9 @@ const appRoutes:Routes=[
   },
   {
     path:"about",component:AboutComponent
+  },
+  {
+    path:"room",component:RoomComponent
   }
 ]
 @NgModule({
@@ -30,7 +34,8 @@ const appRoutes:Routes=[
     NavbarComponent,
     IndexComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    RoomComponent
   ],
   imports: [
     BrowserModule,
